@@ -53,10 +53,76 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="header-menu">
+          <svg class="button-menu" width="24" height="24">
+            <use href="./images/icons.svg#icon-heroicons-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu">
+        <div>
+          <button type="button" class="header-btn-close">
+            <svg class="button-close" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav>
+            <ul class="nav-list-mob">
+              <li>
+                <a class="nav-link-mob-studio" href="./index.html">Studio</a>
+              </li>
+              <li><a class="nav-link-mob" href="">Portfolio</a></li>
+              <li><a class="nav-link-mob" href="">Contacts</a></li>
+            </ul>
+          </nav>
+        </div>
+        <ul class="address-list-mob">
+          <li>
+            <a class="contacts-link-mob" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li>
+            <a class="contacts-link-mob-email" href="mailto:info@devstudio.com"
+              >info@devstudio.com
+            </a>
+          </li>
+        </ul>
+        <ul class="icons-list-title-mob">
+          <li class="card-icons-mob">
+            <a href="" class="content-card-mob">
+              <svg class="card-content-icons-mob" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram-2-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="card-icons-mob">
+            <a href="" class="content-card-mob">
+              <svg class="card-content-icons-mob" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="card-icons-mob">
+            <a href="" class="content-card-mob">
+              <svg class="card-content-icons-mob" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="card-icons-mob">
+            <a href="" class="content-card-mob">
+              <svg class="card-content-icons-mob" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin-1-1"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </header>
     <main>
-      <!------SECTION-1-->
+      <!----SECTION-1-------------->
 
       <section class="hero-section">
         <div class="container">
@@ -65,7 +131,7 @@
         </div>
       </section>
 
-      <!---------SECTION-2--------->
+      <!-------SECTION-2------->
       <section class="section-advantages">
         <div class="container">
           <h2 class="visually-hidden">Our advantages</h2>
@@ -121,13 +187,20 @@
           </ul>
         </div>
       </section>
-      <!----------SECTION-3----------->
+
+      <!--------SECTION-3--------->
+
       <section class="name-team">
         <div class="container">
           <h2 class="our-team">Our Team</h2>
           <ul class="container-our-team">
             <li class="team-list">
-              <img src="./images/mark.jpg" alt="mark guerrero" width="264" />
+              <img
+                srcset="./images/mark.2x.jpg 2x, ./images/mark.jpg 1x"
+                src="./images/mark.jpg"
+                alt="mark guerrero"
+                width="264"
+              />
               <div class="team-members">
                 <h3 class="list-name-team">Mark Guerrero</h3>
                 <p class="list-text">Product Designer</p>
@@ -165,7 +238,12 @@
               </div>
             </li>
             <li class="team-list">
-              <img src="./images/tom.jpg" alt="tom ford" width="264" />
+              <img
+                srcset="./images/tom.2x.jpg 2x, ./images/tom.jpg 1x"
+                src="./images/tom.jpg"
+                alt="tom ford"
+                width="264"
+              />
               <div class="team-members">
                 <h3 class="list-name-team">Tom Ford</h3>
                 <p class="list-text">Frontend Developer</p>
@@ -202,7 +280,12 @@
               </div>
             </li>
             <li class="team-list">
-              <img src="./images/camila.jpg" alt="camila garcia" width="264" />
+              <img
+                srcset="./images/camila.2x.jpg 2x, ./images/camila.jpg 1x"
+                src="./images/camila.jpg"
+                alt="camila garcia"
+                width="264"
+              />
               <div class="team-members">
                 <h3 class="list-name-team">Camila Garcia</h3>
                 <p class="list-text">Marketing</p>
@@ -239,7 +322,12 @@
               </div>
             </li>
             <li class="team-list">
-              <img src="./images/daniel.jpg" alt="daniel wilson" width="264" />
+              <img
+                srcset="./images/daniel.2x.jpg 2x, ./images/daniel.jpg 1x"
+                src="./images/daniel.jpg"
+                alt="daniel wilson"
+                width="264"
+              />
               <div class="team-members">
                 <h3 class="list-name-team">Daniel Wilson</h3>
                 <p class="list-text">UI Designer</p>
@@ -278,7 +366,9 @@
           </ul>
         </div>
       </section>
-      <!-----------SECTION-4------------->
+
+      <!---------SECTION-4----------->
+
       <section class="portfolio">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
@@ -391,7 +481,9 @@
         </div>
       </section>
     </main>
-    <!------FOOTER------>
+
+    <!-- --FOOTER---->
+
     <footer class="color-footer">
       <div class="container footer-box">
         <div class="container-text">
@@ -457,7 +549,8 @@
       </div>
     </footer>
 
-    <!-------MODAL--------->
+    <!----MODAL--------->
+
     <div class="backdrop">
       <div class="modal">
         <button type="button" class="modal-close">
