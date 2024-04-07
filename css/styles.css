@@ -112,7 +112,6 @@ img {
   color: #404bbf;
 }
 .current::after {
-  display: none;
   content: '';
   position: absolute;
   left: 0;
@@ -264,7 +263,7 @@ img {
   box-sizing: content-box;
   padding-top: 188px;
   padding-bottom: 188px;
-  /* max-width: 1440px; */
+  max-width: 1440px;
   margin: 0 auto;
   background-repeat: no-repeat;
   background-position: center;
@@ -436,6 +435,7 @@ img {
   display: flex;
   /* flex-direction: row; */
   flex-wrap: wrap;
+  align-items: center;
   /* gap: 24px; */
   gap: 72px;
 }
@@ -611,8 +611,6 @@ img {
   background-color: #2e2f42;
   padding-top: 100px;
   padding-bottom: 100px;
-  width: 320px;
-  height: 664px;
 }
 .footer-box {
   /* display: flex; */
@@ -625,11 +623,11 @@ img {
   color: #f4f4fd;
   max-width: 264px;
 }
-.footer-social-media {
-  /* margin: 0;
-  margin-right: 80px; */
-  margin-top: 72px;
-}
+/* .footer-social-media {
+  margin: 0;
+  margin-right: 80px;
+  
+} */
 .container-text {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -1026,6 +1024,7 @@ img {
     position: relative;
     color: #404bbf;
   }
+
   .current::after {
     content: '';
     position: absolute;
@@ -1042,14 +1041,45 @@ img {
   }
 
   .address-list {
-    display: flex;
+    display: block;
   }
 
-  .nav-link:hover,
-  .nav-link:hover,
   .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
     max-width: 496px;
+    margin-bottom: 36px;
   }
+
+  .contacts-link {
+    margin-bottom: 12px;
+  }
+
+  .tablet-container {
+    width: 584px;
+  }
+  .container-our-team {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 72px 24px;
+  }
+
+  .portfolio {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+
+  .portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .portfolio-title-list {
+    width: calc((100% - 48px) / 2);
+  }
+
   .button-menu {
     display: none;
   }
@@ -1082,14 +1112,7 @@ img {
     }
   }
 
-  .hero-title {
-    font-size: 56px;
-    line-height: 1.07;
-    margin-bottom: 36px;
-  }
-
   .advantages-list {
-    display: flex;
     gap: 24px;
   }
 
@@ -1097,38 +1120,37 @@ img {
     width: calc((100% - 24px) / 2);
   }
 
-  .container-our-team {
-    gap: 24px;
-  }
-
-  .portfolio-list {
-    flex-direction: row;
-  }
-  .team-list {
-    width: calc((100% - 24px) / 2);
-  }
-  .portfolio-list {
-    gap: 24px 48px;
-  }
-
   .color-footer {
-    width: 768px;
-    height: 564px;
+    padding-top: 96px;
+    padding-bottom: 96px;
   }
   .footer-box {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 72px 24px;
+    width: 584px;
+    justify-content: left;
   }
+
   .container-text {
-    margin-left: 156px;
-    margin-right: 24px;
     width: 264px;
     height: 112px;
   }
 
   .footer-color-web {
-    margin-right: 108px;
     display: block;
-    padding-left: 0;
+    text-align: start;
+    margin-left: 0;
+  }
+
+  .social-media {
+    justify-content: flex-start;
+  }
+
+  .modal-footer {
+    margin-top: 0;
   }
 
   .modal {
@@ -1137,13 +1159,22 @@ img {
     padding: 72px 16px 16px;
   }
 }
+
 /* ----------1158---------------------- */
 
 @media screen and (min-width: 1158px) {
   .container {
     width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+  .address-list {
+    display: flex;
+  }
+
+  .hero-title {
+    margin-bottom: 48px;
   }
 
   .hero-wrap {
@@ -1166,10 +1197,6 @@ img {
         ),
         url(../images/people-office.dec.2x.jpg);
     }
-  }
-
-  .hero-title {
-    margin-bottom: 48px;
   }
 
   .section-advantages {
@@ -1204,6 +1231,17 @@ img {
     font-weight: 400;
   }
 
+  .name-team {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .container-our-team {
+    width: 1128px;
+    flex-direction: row;
+    gap: 24px;
+  }
+
   .team-list {
     width: calc((100% - 72px) / 4);
   }
@@ -1223,11 +1261,9 @@ img {
   }
 
   .color-footer {
-    background-color: #2e2f42;
+    display: flex;
     padding-top: 100px;
     padding-bottom: 100px;
-    width: 1440px;
-    height: 312px;
   }
 
   .footer-box {
@@ -1249,5 +1285,14 @@ img {
   }
   .modal-footer {
     margin-top: 0;
+  }
+
+  .footer-box {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .footer-form {
+    flex-wrap: nowrap;
   }
 }
