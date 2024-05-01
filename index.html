@@ -61,7 +61,7 @@
         </button>
       </div>
       <div class="mob-menu">
-        <div>
+        <div class="menu-menu">
           <button type="button" class="header-btn-close">
             <svg class="button-close" width="8" height="8">
               <use href="./images/icons.svg#icon-close"></use>
@@ -81,18 +81,22 @@
             </ul>
           </nav>
         </div>
-        <ul class="address-list-mob">
-          <li>
-            <a class="contacts-link-mob" href="tel:+110001111111"
-              >+11 (000) 111-11-11</a
-            >
-          </li>
-          <li>
-            <a class="contacts-link-mob-email" href="mailto:info@devstudio.com"
-              >info@devstudio.com
-            </a>
-          </li>
-        </ul>
+        <address class="mob-adress-list">
+          <ul class="address-list-mob">
+            <li>
+              <a class="contacts-link-mob" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li>
+              <a
+                class="contacts-link-mob-email"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com
+              </a>
+            </li>
+          </ul>
+        </address>
         <ul class="icons-list-title-mob">
           <li class="card-icons-mob">
             <a href="" class="content-card-mob">
@@ -604,8 +608,8 @@
                   <source
                     media="(min-width: 320px)"
                     srcset="
-                      ./images/portfolio/mob/Online.mob.jpg          1x,
-                      ./images/portfolio/tablet/Online.tablet.2x.jpg 2x
+                      ./images/portfolio/mob/Online.mob.jpg    1x,
+                      ./images/portfolio/mob/Online.mob.2x.jpg 2x
                     "
                   />
                   <img
@@ -773,10 +777,11 @@
             <label for="user-privacy" class="check-text"
               ><span class="check-modal">
                 <svg class="modal-vector" width="10" height="8">
-                  <use href="./images/icons.svg#icon-Vector"></use>
-                </svg> </span
-              >I accept the terms and conditions of the
-              <a href="" class="check-link">Privacy Policy</a></label
+                  <use href="./images/icons.svg#icon-Vector"></use></svg></span
+              ><span class="frame-checkbox"
+                >I accept the terms and conditions of the
+                <a href="" class="check-link">Privacy Policy</a></span
+              ></label
             >
           </div>
           <button type="submit" class="modal-button">Send</button>
